@@ -1,0 +1,18 @@
+{
+  "name": "re8ch-tenant-runtime",
+  "version": "0.1.0",
+  "description": "Run OCI images and isolated databases on RE8CH tenant capacity.",
+  "author": {
+    "name": "RE8CH", "url": "https://github.com/re8ch"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Re8ch Tenant Runtime",
+    "shortDescription": "Run containers and databases on tenant capacity.",
+    "longDescription": "Plan, create, observe, and release Qwen-scoped OCI container runs and database instances without exposing provider cluster credentials.",
+    "developerName": "RE8CH", "category": "Developer Tools",
+    "capabilities": ["Interactive", "Write", "OAuth", "MCP"],
+    "defaultPrompt": ["List my available image and database runtime capacity.", "Plan this digest-pinned container run before creating it."]
+  },
+  "mcpServers": "./.mcp.json"
+}

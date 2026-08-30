@@ -1,0 +1,18 @@
+{
+  "name": "re8ch-tenant-edge",
+  "version": "0.1.0",
+  "description": "Bind Qwen PublicEdge routes to approved RE8CH tenant workload origins.",
+  "author": {
+    "name": "RE8CH", "url": "https://github.com/re8ch"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Re8ch Tenant Edge",
+    "shortDescription": "Connect tenant routes to approved origins.",
+    "longDescription": "Inspect and bind Qwen-owned PublicEdge services to opaque origins returned by RE8CH runtime claims while preserving Qwen authority over ynzs.com.",
+    "developerName": "RE8CH", "category": "Developer Tools",
+    "capabilities": ["Interactive", "Write", "OAuth", "MCP"],
+    "defaultPrompt": ["Show Qwen PublicEdge bindings and eligible tenant origins.", "Preview this service binding without changing DNS."]
+  },
+  "mcpServers": "./.mcp.json"
+}

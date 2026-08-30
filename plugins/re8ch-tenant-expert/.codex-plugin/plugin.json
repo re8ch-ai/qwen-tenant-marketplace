@@ -1,0 +1,18 @@
+{
+  "name": "re8ch-tenant-expert",
+  "version": "0.1.0",
+  "description": "Expert orchestration for Qwen tenant runtime, database, and PublicEdge workflows.",
+  "author": {
+    "name": "RE8CH", "url": "https://github.com/re8ch"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Re8ch Tenant Expert",
+    "shortDescription": "Orchestrate Qwen tenant infrastructure workflows.",
+    "longDescription": "A tenant expert that composes image runs, database instances, storage, and Qwen PublicEdge bindings through the same audited tenant control plane.",
+    "developerName": "RE8CH", "category": "Developer Tools",
+    "capabilities": ["Interactive", "Write", "OAuth", "MCP"],
+    "defaultPrompt": ["Deploy this application for Qwen using an OCI image and a database, then prepare its PublicEdge origin binding."]
+  },
+  "mcpServers": "./.mcp.json"
+}
